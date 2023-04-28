@@ -8,10 +8,7 @@ function Welcome({ formData }) {
         
         <div className="card-body">
           <ul className="list-group list-group-flush">
-            <li className="list-group-item">
-              Username:
-              <span className="h6 text-success">{formData.firstName}</span>
-            </li>
+            
             <li className="list-group-item">
               Email: <span className="h6 text-success">{formData.lastName}</span>
             </li>
