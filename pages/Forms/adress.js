@@ -20,7 +20,7 @@ function Address({ formData, setFormData }) {
         type="text"
         label="Почта индекс"
         value={formData.password}
-        onChange={(e) => setFormData({ ...formData, city: e.target.value })}
+        onChange={(e) => setFormData({ ...formData, password: e.target.value })}
       />
     </>
   );
