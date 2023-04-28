@@ -10,7 +10,7 @@ function PersonalInfo({ formData, setFormData }) {
         onChange={(e) =>
           setFormData({ ...formData, firstName: e.target.value })
         }
-      />{" "}
+      />
       <FormInputGroup
         label="Whatsapp номер"
         type="text"
