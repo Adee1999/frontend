@@ -4,12 +4,7 @@ import FormInputGroup from "../../components/form/forminputgroup";
 function Address({ formData, setFormData }) {
   return (
     <>
-      <FormInputGroup
-        type="text"
-        label="Город, Район"
-        value={formData.street}
-        onChange={(e) => setFormData({ ...formData, street: e.target.value })}
-      />
+      
       <FormInputGroup
         type="text"
         label="Улица дом"
