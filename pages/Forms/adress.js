@@ -9,7 +9,7 @@ function Address({ formData, setFormData }) {
         label="Город, Район"
         value={formData.street}
         onChange={(e) => setFormData({ ...formData, street: e.target.value })}
-      />{" "}
+      />
       <FormInputGroup
         type="text"
         label="Улица дом"
