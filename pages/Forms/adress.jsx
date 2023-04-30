@@ -3,7 +3,7 @@ import FormInputGroup from "../../components/form/forminputgroup";
 
 function Address({ formData, setFormData }) {
   return (
-    <>
+    <form>
       <FormInputGroup
         type="text"
         label="Город, Район"
@@ -22,7 +22,7 @@ function Address({ formData, setFormData }) {
         value={formData.password}
         onChange={(e) => setFormData({ ...formData, password: e.target.value })}
       />
-    </>
+    </form>
   );
 }
 
