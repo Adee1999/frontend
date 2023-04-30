@@ -2,7 +2,7 @@ import React from "react";
 import FormInputGroup from "../../components/form/forminputgroup";
 function PersonalInfo({ formData, setFormData }) {
   return (
-    <>
+    <form>
      <FormInputGroup
         label="Имя"
         type="text"
@@ -24,7 +24,7 @@ function PersonalInfo({ formData, setFormData }) {
         onChange={(e) => setFormData({ ...formData, userName: e.target.value })}
       />
      
-    </>
+    </form>
   );
 }
 
