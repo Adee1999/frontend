@@ -8,14 +8,14 @@ import Welcome from "../../pages/Forms/welcome";
 function Form() {
   const [page, setPage] = useState(0);
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-    confirmPassword: "",
-    firstName: "",
-    lastName: "",
-    userName: "",
-    street: "",
-    city: "",
+    email: ``,
+    password: ``,
+    confirmPassword: ``,
+    firstName: ``,
+    lastName: ``,
+    userName: ``,
+    street: ``,
+    city: ``,
   });
   const FormTitle = ["", "Ваш данный", "Адресс", "Done"];
 
