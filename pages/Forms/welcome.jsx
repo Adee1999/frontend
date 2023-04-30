@@ -2,7 +2,7 @@ import React from "react";
 
 function Welcome({ formData }) {
   return (
-    <>
+    <form>
       <h4 className="text-center mt-2">Registration was successful for...</h4>
       <div className="card mt-4">
         
@@ -31,7 +31,7 @@ function Welcome({ formData }) {
           </ul>
         </div>
       </div>
-    </>
+    </form>
   );
 }
 
