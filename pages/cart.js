@@ -4,10 +4,11 @@ import Link from "next/link";
 import Wrapper from "@/components/Wrapper";
 import CartItem from "@/components/CartItem";
 import { useSelector } from "react-redux";
+import { MultiStepForm } from "@/components/MultiStepForm";
 
 import { makePaymentRequest } from "@/utils/api";
 import { loadStripe } from "@stripe/stripe-js";
-import Form from "@/components/form/form";
+
 const stripePromise = loadStripe(
     process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
@@ -78,7 +79,7 @@ const Cart = () => {
                                             &#8377;{subTotal}
                                         </div>
                                     </div>
-                                    <Form/>
+                                    <MultiStepForm />
                                 </div>
 
                                 {/* BUTTON START */}
