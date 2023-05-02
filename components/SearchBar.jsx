@@ -15,7 +15,7 @@ const Search = ({ setSearchModal }) => {
     };
 
     let { data } = useFetch(
-        `/api/products?populate=*&filters[name][$contains]=${query}`
+        `/api/products?populate=*&filters[name][$contains]=${query.trim().toLocaleLowerCase()}`
     );
 
     if (!query.length) {
